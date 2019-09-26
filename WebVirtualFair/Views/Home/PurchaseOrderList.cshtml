@@ -1,0 +1,62 @@
+@model  IEnumerable<WebVirtualFair.Models.PurchaseOrderData>  
+
+@{
+    ViewBag.Title = "Lista de Ordenes de compra";
+    Layout = "_Layout";
+}
+
+<h1> Purchase Order List </h1>
+
+<div class="container">
+    <h4>List</h4>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.commission)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.quantity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.customTax)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.insuranceStatus)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.insuranceValue)
+            </th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor((modelItem => item.id))
+                </td>
+                <td>
+                    @Html.DisplayFor((modelItem => item.commission))
+                </td>
+                <td>
+                    @Html.DisplayFor((modelItem => item.quantity))
+                </td>
+                <td>
+                    @Html.DisplayFor((modelItem => item.customTax))
+                </td>
+                <td>
+                    @Html.DisplayFor((modelItem => item.insuranceStatus))
+                </td>
+                <td>
+                    @Html.DisplayFor((modelItem => item.insuranceValue))
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>
