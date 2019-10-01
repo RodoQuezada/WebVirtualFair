@@ -1,0 +1,61 @@
+@model IEnumerable<WebVirtualFair.Models.AddressData>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "_Layout";
+}
+
+<h1> Lista de Direcciones</h1>
+
+<p>
+    <a asp-action="createAddress">Nueva dirección</a>
+</p>
+<table class="table">
+
+    <thead>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.country)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.city)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.address)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.addressNumber)
+        </th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.country)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.city)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.address)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.addressNumber)
+            </td>
+            <td>
+                @Html.ActionLink("Delete", "DeleteAddress", new {id = item.id}) |
+                @Html.ActionLink("Update", "updateAddress", new {id = item.id}) |
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

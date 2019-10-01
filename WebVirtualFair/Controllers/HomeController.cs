@@ -89,7 +89,110 @@ namespace WebVirtualFair.Controllers
             return RedirectToAction("Index");
         }
         
+        // funcionalidad de Address
+        public async Task<IActionResult> ListAddress()
+        {
+            List<AddressData> users = new List<AddressData>();
+            HttpClient client = _api.Initial();
+            HttpResponseMessage res = await client.GetAsync("api/address");
+            if (res.IsSuccessStatusCode)
+            {
+                var results = res.Content.ReadAsStringAsync().Result;
+                users = JsonConvert.DeserializeObject<List<AddressData>>(results);
+            }
+            return View(users);
+        }
+        
+        public ActionResult createAddress()
+        {
+            return View();
+        }
+        
+        [HttpPost]
+        public IActionResult createAddress(AddressData addressPar)
+        {
+            HttpClient client = _api.Initial();
 
+            var postTask = client.PostAsJsonAsync<AddressData>("api/address", addressPar);
+            postTask.Wait();
+
+            var result = postTask.Result;
+            if (result.IsSuccessStatusCode)
+            {
+                return RedirectToAction("ListAddress");
+            }
+            return View();
+        }
+        
+        [HttpDelete]
+        public async Task<IActionResult> DeleteAddress(long id)
+        {
+            var user = new PersonData();
+            HttpClient client = _api.Initial();
+            HttpResponseMessage res = await client.DeleteAsync($"api/address/{id}");
+            return RedirectToAction("ListAddress");
+        }
+
+        public async Task<IActionResult> updateAddress(long id)
+        {
+            var upAddress = new AddressData();
+            HttpClient client = _api.Initial();
+            HttpResponseMessage res = await client.GetAsync($"api/address/{id}");
+            
+            if (res.IsSuccessStatusCode)
+            {
+                var result = res.Content.ReadAsStringAsync().Result;
+                upAddress = JsonConvert.DeserializeObject<AddressData>(result);
+            }
+            return View(upAddress);
+        }
+
+            
+        /*
+        [HttpPut]
+        public IActionResult updateAddress(AddressData addressUp)
+        {
+            
+            HttpClient client = _api.Initial();
+            var postTask = client.PutAsJsonAsync<AddressData>("api/address/up", addressUp);
+            postTask.Wait();
+
+
+            var result = postTask.Result;
+            if (result.IsSuccessStatusCode)
+            {
+                return RedirectToAction("ListAddress");
+            }
+
+            return RedirectToAction("ListAddress");
+        }*/
+        
+        [HttpPost]
+        public IActionResult updateAddress(AddressData addressUp)
+        {
+
+            if (ModelState.IsValid)
+            {
+                 HttpClient client = _api.Initial();
+                 var postTask = client.PutAsJsonAsync<AddressData>("api/address/up", addressUp);
+                  postTask.Wait();
+                  var result = postTask.Result;
+                  if (result.IsSuccessStatusCode)
+                  {
+                      return RedirectToAction("ListAddress");
+                  }
+            }
+            
+         
+
+
+         
+
+            return RedirectToAction("Index");
+        }
+        
+        
+        
         public IActionResult Privacy()
         {
             return View();

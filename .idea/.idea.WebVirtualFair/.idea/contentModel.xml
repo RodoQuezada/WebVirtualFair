@@ -17,6 +17,7 @@
           <e p="Helper.cs" t="Include" />
         </e>
         <e p="Models" t="Include">
+          <e p="AddressData.cs" t="Include" />
           <e p="ErrorViewModel.cs" t="Include" />
           <e p="PersonData.cs" t="Include" />
           <e p="PurchaseOrderData.cs" t="Include" />
@@ -39,10 +40,13 @@
           <e p="_ViewStart.cshtml" t="Include" />
           <e p="Home" t="Include">
             <e p="create.cshtml" t="Include" />
+            <e p="createAddress.cshtml" t="Include" />
             <e p="Details.cshtml" t="Include" />
             <e p="Index.cshtml" t="Include" />
+            <e p="ListAddress.cshtml" t="Include" />
             <e p="Privacy.cshtml" t="Include" />
             <e p="PurchaseOrderList.cshtml" t="Include" />
+            <e p="updateAddress.cshtml" t="Include" />
           </e>
           <e p="Shared" t="Include">
             <e p="_CookieConsentPartial.cshtml" t="Include" />
