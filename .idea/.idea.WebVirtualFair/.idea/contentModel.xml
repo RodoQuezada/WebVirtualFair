@@ -42,6 +42,7 @@
             <e p="create.cshtml" t="Include" />
             <e p="createAddress.cshtml" t="Include" />
             <e p="Details.cshtml" t="Include" />
+            <e p="EditPerson.cshtml" t="Include" />
             <e p="Index.cshtml" t="Include" />
             <e p="ListAddress.cshtml" t="Include" />
             <e p="Privacy.cshtml" t="Include" />

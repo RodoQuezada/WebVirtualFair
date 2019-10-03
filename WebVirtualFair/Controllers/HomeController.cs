@@ -1,4 +1,4 @@
-﻿using System;
+﻿﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -68,6 +68,8 @@ namespace WebVirtualFair.Controllers
         public IActionResult create(PersonData person)
         {
             HttpClient client = _api.Initial();
+            
+            
 
             var postTask = client.PostAsJsonAsync<PersonData>("api/person", person);
             postTask.Wait();
@@ -89,7 +91,41 @@ namespace WebVirtualFair.Controllers
             return RedirectToAction("Index");
         }
         
-        // funcionalidad de Address
+        public async Task<IActionResult> EditPerson(long id)
+        {
+            var upPerson = new PersonData();
+            HttpClient client = _api.Initial();
+            HttpResponseMessage res = await client.GetAsync($"api/person/{id}");
+            
+            if (res.IsSuccessStatusCode)
+            {
+                var result = res.Content.ReadAsStringAsync().Result;
+                upPerson = JsonConvert.DeserializeObject<PersonData>(result);
+            }
+            return View(upPerson);
+        }
+        
+        [HttpPost]
+        public IActionResult EditPerson(PersonData person)
+        {
+            if (ModelState.IsValid)
+            {
+                HttpClient client = _api.Initial();
+                var postTask = client.PutAsJsonAsync<PersonData>("api/person/up", person);
+                postTask.Wait();
+                var result = postTask.Result;
+                if (result.IsSuccessStatusCode)
+                {
+                    return RedirectToAction("Index");
+                }
+            }
+            return RedirectToAction("Index");
+        }
+        
+        
+        
+        
+        // fin funcionalidad Address ///////////////////////////////////////////////////
         public async Task<IActionResult> ListAddress()
         {
             List<AddressData> users = new List<AddressData>();
@@ -147,30 +183,10 @@ namespace WebVirtualFair.Controllers
             return View(upAddress);
         }
 
-            
-        /*
-        [HttpPut]
-        public IActionResult updateAddress(AddressData addressUp)
-        {
-            
-            HttpClient client = _api.Initial();
-            var postTask = client.PutAsJsonAsync<AddressData>("api/address/up", addressUp);
-            postTask.Wait();
-
-
-            var result = postTask.Result;
-            if (result.IsSuccessStatusCode)
-            {
-                return RedirectToAction("ListAddress");
-            }
-
-            return RedirectToAction("ListAddress");
-        }*/
         
         [HttpPost]
         public IActionResult updateAddress(AddressData addressUp)
         {
-
             if (ModelState.IsValid)
             {
                  HttpClient client = _api.Initial();
@@ -182,16 +198,10 @@ namespace WebVirtualFair.Controllers
                       return RedirectToAction("ListAddress");
                   }
             }
-            
-         
-
-
-         
-
             return RedirectToAction("Index");
         }
         
-        
+        // fin funcionalidad Address ///////////////////////////////////////////////////
         
         public IActionResult Privacy()
         {

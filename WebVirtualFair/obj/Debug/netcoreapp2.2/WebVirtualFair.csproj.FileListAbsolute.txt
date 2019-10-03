@@ -36,3 +36,4 @@
 /Users/ro/RiderProjects/WebVirtualFair/WebVirtualFair/obj/Debug/netcoreapp2.2/Razor/Views/_ViewImports.cshtml.g.cs
 /Users/ro/RiderProjects/WebVirtualFair/WebVirtualFair/obj/Debug/netcoreapp2.2/Razor/Views/_ViewStart.cshtml.g.cs
 /Users/ro/RiderProjects/WebVirtualFair/WebVirtualFair/obj/Debug/netcoreapp2.2/Razor/Views/Home/updateAddress.cshtml.g.cs
+/Users/ro/RiderProjects/WebVirtualFair/WebVirtualFair/obj/Debug/netcoreapp2.2/Razor/Views/Home/EditPerson.cshtml.g.cs

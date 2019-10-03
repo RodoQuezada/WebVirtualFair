@@ -45,7 +45,7 @@
                 @Html.DisplayFor(modelItem => item.veryLastName)
             </td>
             <td>
-                @Html.ActionLink("Edit", "", new {id = item.id}) /
+                @Html.ActionLink("Edit", "EditPerson", new {id = item.id}) /
                 @Html.ActionLink("Details", "Details", new {id = item.id}) /
                 @Html.ActionLink("Delete", "Delete", new {id = item.id}) /
                 @Html.ActionLink("PurchaseOrderList", "PurchaseOrderList", new {id = item.id})
