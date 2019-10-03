@@ -175,6 +175,81 @@ namespace WebVirtualFair.Controllers
             return RedirectToAction("listaProsucto");
         }
 
+        //metodos de productos disponibles
+        public async Task<IActionResult> listaProductosAvailable()
+        {
+            List<ProductAvailableData> users = new List<ProductAvailableData>();
+            HttpClient client = _api.Initial();
+            HttpResponseMessage res = await client.GetAsync("api/productAvailable");
+            if (res.IsSuccessStatusCode)
+            {
+                var results = res.Content.ReadAsStringAsync().Result;
+                users = JsonConvert.DeserializeObject<List<ProductAvailableData>>(results);
+            }
+            return View(users);
+        }
+        
+        public ActionResult createProductAvailable()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult createProductAvailable(ProductAvailableData productAvailable)
+        {
+            HttpClient client = _api.Initial();
+
+            var postTask = client.PostAsJsonAsync<ProductAvailableData>("api/productAvailable", productAvailable);
+            postTask.Wait();
+
+            var result = postTask.Result;
+            if (result.IsSuccessStatusCode)
+            {
+                return RedirectToAction("listaProductosAvailable");
+            }
+            return View();
+        }
+        public async Task<IActionResult> DeleteProductAvailable(long id)
+        {
+            var user = new ProductAvailableData();
+            HttpClient client = _api.Initial();
+            HttpResponseMessage res = await client.DeleteAsync($"api/productAvailable/{id}");
+            return RedirectToAction("listaProductosAvailable");
+        }
+        
+        
+        
+        public async Task<IActionResult> EditProductAvailable(long id)
+        {
+            var upProductAvailable = new ProductAvailableData();
+            HttpClient client = _api.Initial();
+            HttpResponseMessage res = await client.GetAsync(requestUri: $"api/productAvailable/{id}");
+            if (res.IsSuccessStatusCode)
+            {
+                var result = res.Content.ReadAsStringAsync().Result;
+                upProductAvailable = JsonConvert.DeserializeObject<ProductAvailableData>(result);
+                
+            }
+            return View (upProductAvailable);
+        }
+
+        [HttpPost]
+        public IActionResult EditProductAvailable(ProductAvailableData productAvailable)
+        {
+            if (ModelState.IsValid)
+            {
+                HttpClient client = _api.Initial();
+                var postTAsk = client.PutAsJsonAsync<ProductAvailableData>(requestUri: "api/productAvailable/up", productAvailable);
+                postTAsk.Wait();
+                var result = postTAsk.Result;
+                if(result.IsSuccessStatusCode)
+                {
+                    return RedirectToAction("listaProductosAvailable");
+                }
+            }
+
+            return RedirectToAction("listaProductosAvailable");
+        }
 
 
     }

@@ -1,0 +1,76 @@
+﻿@using System.Collections.Immutable
+@model System.Collections.Generic.List<WebVirtualFair.Models.ProductAvailableData>
+@model IEnumerable<WebVirtualFair.Models.ProductAvailableData> 
+@{
+    ViewBag.Title = "Productos Disponibles";
+    Layout = "_Layout";
+}
+
+<h2>Productos Disponibles</h2>
+<table class="table">
+    <thead>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(expression: model => model.id)
+        </th>
+        
+        <th>
+            @Html.DisplayNameFor(expression: model => model.created_at)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(expression: model => model.updated_at)
+        </th>
+        <th>
+            @Html.DisplayNameFor(expression: model => model.product_type)
+        </th>
+        <th>
+            @Html.DisplayNameFor(expression: model => model.stock)
+        </th>
+        <th>
+            @Html.DisplayNameFor(expression: model => model.stock_unity)
+        </th>
+        <th>
+            @Html.DisplayNameFor(expression: model => model.experition_date)
+        </th>
+    </tr>
+   
+    </thead>
+
+    <tbody>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem=>item.id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem=>item.created_at)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem=>item.updated_at)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem=>item.product_type)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem=>item.stock)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem=>item.stock_unity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.experition_date)
+            </td>
+          
+            <td>
+                @Html.ActionLink("Edit", "EditProductAvailable", new {id = item.id}) /
+                @Html.ActionLink("Delete", "DeleteProductAvailable", new {id = item.id}) 
+            </td> 
+            
+            
+        </tr>
+    }
+    </tbody>
+
+</table>

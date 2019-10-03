@@ -18,6 +18,7 @@
         <e p="Models" t="Include">
           <e p="ErrorViewModel.cs" t="Include" />
           <e p="PersonData.cs" t="Include" />
+          <e p="ProductAvailableData.cs" t="Include" />
           <e p="ProductData.cs" t="Include" />
           <e p="PurchaseOrderData.cs" t="Include" />
         </e>
@@ -40,9 +41,12 @@
           <e p="Home" t="Include">
             <e p="create.cshtml" t="Include" />
             <e p="createProduct.cshtml" t="Include" />
+            <e p="createProductAvailable.cshtml" t="Include" />
             <e p="Details.cshtml" t="Include" />
             <e p="EditProduct.cshtml" t="Include" />
+            <e p="EditProductAvailable.cshtml" t="Include" />
             <e p="Index.cshtml" t="Include" />
+            <e p="listaProductosAvailable.cshtml" t="Include" />
             <e p="listaProsucto.cshtml" t="Include" />
             <e p="Privacy.cshtml" t="Include" />
             <e p="PurchaseOrderList.cshtml" t="Include" />
