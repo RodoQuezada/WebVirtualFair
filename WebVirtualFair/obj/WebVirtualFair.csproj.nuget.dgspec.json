@@ -1,28 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "/Users/ro/RiderProjects/WebVirtualFair/WebVirtualFair/WebVirtualFair.csproj": {}
+    "C:\\Users\\Lau Lau\\RiderProjects\\WebVirtualFair\\WebVirtualFair\\WebVirtualFair.csproj": {}
   },
   "projects": {
-    "/Users/ro/RiderProjects/WebVirtualFair/WebVirtualFair/WebVirtualFair.csproj": {
+    "C:\\Users\\Lau Lau\\RiderProjects\\WebVirtualFair\\WebVirtualFair\\WebVirtualFair.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ro/RiderProjects/WebVirtualFair/WebVirtualFair/WebVirtualFair.csproj",
+        "projectUniqueName": "C:\\Users\\Lau Lau\\RiderProjects\\WebVirtualFair\\WebVirtualFair\\WebVirtualFair.csproj",
         "projectName": "WebVirtualFair",
-        "projectPath": "/Users/ro/RiderProjects/WebVirtualFair/WebVirtualFair/WebVirtualFair.csproj",
-        "packagesPath": "/Users/ro/.nuget/packages/",
-        "outputPath": "/Users/ro/RiderProjects/WebVirtualFair/WebVirtualFair/obj/",
+        "projectPath": "C:\\Users\\Lau Lau\\RiderProjects\\WebVirtualFair\\WebVirtualFair\\WebVirtualFair.csproj",
+        "packagesPath": "C:\\Users\\Lau Lau\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Lau Lau\\RiderProjects\\WebVirtualFair\\WebVirtualFair\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "/Users/ro/.config/NuGet/NuGet.Config"
+          "C:\\Users\\Lau Lau\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.2"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

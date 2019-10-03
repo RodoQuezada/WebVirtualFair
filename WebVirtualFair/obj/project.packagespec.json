@@ -1,18 +1,19 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "/Users/ro/RiderProjects/WebVirtualFair/WebVirtualFair/WebVirtualFair.csproj",
+    "projectUniqueName": "C:\\Users\\Lau Lau\\RiderProjects\\WebVirtualFair\\WebVirtualFair\\WebVirtualFair.csproj",
     "projectName": "WebVirtualFair",
-    "projectPath": "/Users/ro/RiderProjects/WebVirtualFair/WebVirtualFair/WebVirtualFair.csproj",
-    "outputPath": "/Users/ro/RiderProjects/WebVirtualFair/WebVirtualFair/obj/",
+    "projectPath": "C:\\Users\\Lau Lau\\RiderProjects\\WebVirtualFair\\WebVirtualFair\\WebVirtualFair.csproj",
+    "outputPath": "C:\\Users\\Lau Lau\\RiderProjects\\WebVirtualFair\\WebVirtualFair\\obj\\",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
-      "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
     ],
     "originalTargetFrameworks": [
       "netcoreapp2.2"
     ],
     "sources": {
+      "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
       "https://api.nuget.org/v3/index.json": {}
     },
     "frameworks": {
