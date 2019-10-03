@@ -1,8 +1,59 @@
-﻿@model object
+﻿@model ProductAvailableData
 
 @{
     ViewBag.Title = "title";
     Layout = "_Layout";
 }
 
-<h2>title</h2>
+
+<h2>Mantenedor de Productos Disponibles</h2>
+
+<h4>Nuevo Producto</h4>
+<hr/>
+
+<form asp-action="createProductAvailable">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <div class="form-group">
+                    <label asp-for="product_type" class="custom-control-label"> Tipo de Producto</label>
+                    <input asp-for="product_type" class="form-control"/>
+                    <span asp-validation-for="product_type" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="stock" class="custom-control-label">Stock</label>
+                    <input asp-for="stock" class="form-control"/>
+                    <span asp-validation-for="stock" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="stock_unity" class="custom-control-label">Stock Unity</label>
+                    <input asp-for="stock_unity" class="form-control"/>
+                    <span asp-validation-for="stock_unity" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="experition_date" class="custom-control-label">Expiration Date</label>
+                    <input asp-for="experition_date" class="form-control"/>
+                    <span asp-validation-for="experition_date" class="text-danger"></span>
+                </div>
+
+               
+           
+
+                <div class="form-group">
+                    <input type="submit" value="Create" class="btn btn-primary"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+
+<div>
+    <a asp-action="listaProductosAvailable">Back to List</a>
+</div>
+
+@section Scripts
+{
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+}

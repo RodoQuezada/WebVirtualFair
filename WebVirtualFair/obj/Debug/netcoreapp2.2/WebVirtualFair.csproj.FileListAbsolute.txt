@@ -67,3 +67,6 @@ C:\Users\Lau Lau\RiderProjects\WebVirtualFair\WebVirtualFair\obj\Debug\netcoreap
 C:\Users\Lau Lau\RiderProjects\WebVirtualFair\WebVirtualFair\obj\Debug\netcoreapp2.2\Razor\Views\Home\listaProsucto.g.cshtml.cs
 C:\Users\Lau Lau\RiderProjects\WebVirtualFair\WebVirtualFair\obj\Debug\netcoreapp2.2\Razor\Views\Home\createProduct.g.cshtml.cs
 C:\Users\Lau Lau\RiderProjects\WebVirtualFair\WebVirtualFair\obj\Debug\netcoreapp2.2\Razor\Views\Home\EditProduct.g.cshtml.cs
+C:\Users\Lau Lau\RiderProjects\WebVirtualFair\WebVirtualFair\obj\Debug\netcoreapp2.2\Razor\Views\Home\createProductAvailable.g.cshtml.cs
+C:\Users\Lau Lau\RiderProjects\WebVirtualFair\WebVirtualFair\obj\Debug\netcoreapp2.2\Razor\Views\Home\EditProductAvailable.g.cshtml.cs
+C:\Users\Lau Lau\RiderProjects\WebVirtualFair\WebVirtualFair\obj\Debug\netcoreapp2.2\Razor\Views\Home\listaProductosAvailable.g.cshtml.cs

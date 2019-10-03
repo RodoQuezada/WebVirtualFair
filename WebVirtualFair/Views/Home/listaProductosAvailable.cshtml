@@ -1,11 +1,13 @@
 ﻿@using System.Collections.Immutable
-@model System.Collections.Generic.List<WebVirtualFair.Models.ProductAvailableData>
+
 @model IEnumerable<WebVirtualFair.Models.ProductAvailableData> 
 @{
     ViewBag.Title = "Productos Disponibles";
     Layout = "_Layout";
 }
-
+<p>
+    <a asp-action="CreateProductAvailable"> Crear Nuevo Producto Disponible</a>
+</p>
 <h2>Productos Disponibles</h2>
 <table class="table">
     <thead>
