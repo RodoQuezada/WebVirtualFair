@@ -82,14 +82,27 @@ namespace WebVirtualFair.Controllers
         
         
         public async Task<IActionResult> Delete(long id)
+                 {
+                     var user = new PersonData();
+                     HttpClient client = _api.Initial();
+                     HttpResponseMessage res = await client.DeleteAsync($"api/person/{id}");
+                     return RedirectToAction("Index");
+                 }
+        
+        public async Task<IActionResult> listaProsucto()
         {
-            var user = new PersonData();
+            List<ProductData> users = new List<ProductData>();
             HttpClient client = _api.Initial();
-            HttpResponseMessage res = await client.DeleteAsync($"api/person/{id}");
-            return RedirectToAction("Index");
+            HttpResponseMessage res = await client.GetAsync("api/product");
+            if (res.IsSuccessStatusCode)
+            {
+                var results = res.Content.ReadAsStringAsync().Result;
+                users = JsonConvert.DeserializeObject<List<ProductData>>(results);
+            }
+            return View(users);
         }
         
-
+        
         public IActionResult Privacy()
         {
             return View();
@@ -100,6 +113,69 @@ namespace WebVirtualFair.Controllers
         {
             return View(new ErrorViewModel {RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier});
         }
+
+        public ActionResult createProduct()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult createProduct(ProductData product)
+        {
+            HttpClient client = _api.Initial();
+
+            var postTask = client.PostAsJsonAsync<ProductData>("api/product", product);
+            postTask.Wait();
+
+            var result = postTask.Result;
+            if (result.IsSuccessStatusCode)
+            {
+                return RedirectToAction("listaProsucto");
+            }
+            return View();
+        }
+        
+        public async Task<IActionResult> DeleteProduct(long id)
+        {
+            var user = new ProductData();
+            HttpClient client = _api.Initial();
+            HttpResponseMessage res = await client.DeleteAsync($"api/product/{id}");
+            return RedirectToAction("listaProsucto");
+        }
+
+        public async Task<IActionResult> EditProduct(long id)
+        {
+            var upProduct = new ProductData();
+            HttpClient client = _api.Initial();
+            HttpResponseMessage res = await client.GetAsync(requestUri: $"api/product/{id}");
+            if (res.IsSuccessStatusCode)
+            {
+                var result = res.Content.ReadAsStringAsync().Result;
+                upProduct = JsonConvert.DeserializeObject<ProductData>(result);
+                
+            }
+            return View (upProduct);
+        }
+
+        [HttpPost]
+        public IActionResult EditProduct(ProductData product)
+        {
+            if (ModelState.IsValid)
+            {
+                HttpClient client = _api.Initial();
+                var postTAsk = client.PutAsJsonAsync<ProductData>(requestUri: "api/product/up", product);
+                postTAsk.Wait();
+                var result = postTAsk.Result;
+                if(result.IsSuccessStatusCode)
+                {
+                    return RedirectToAction("listaProsucto");
+                }
+            }
+
+            return RedirectToAction("listaProsucto");
+        }
+
+
 
     }
 }

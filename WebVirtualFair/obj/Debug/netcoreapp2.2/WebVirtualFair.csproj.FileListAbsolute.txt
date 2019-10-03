@@ -31,3 +31,39 @@
 /Users/ro/RiderProjects/WebVirtualFair/WebVirtualFair/obj/Debug/netcoreapp2.2/Razor/Views/Home/Details.g.cshtml.cs
 /Users/ro/RiderProjects/WebVirtualFair/WebVirtualFair/obj/Debug/netcoreapp2.2/Razor/Views/Home/create.g.cshtml.cs
 /Users/ro/RiderProjects/WebVirtualFair/WebVirtualFair/obj/Debug/netcoreapp2.2/Razor/Views/Home/PurchaseOrderList.g.cshtml.cs
+C:\Users\Lau Lau\RiderProjects\WebVirtualFair\WebVirtualFair\bin\Debug\netcoreapp2.2\WebVirtualFair.deps.json
+C:\Users\Lau Lau\RiderProjects\WebVirtualFair\WebVirtualFair\bin\Debug\netcoreapp2.2\WebVirtualFair.runtimeconfig.json
+C:\Users\Lau Lau\RiderProjects\WebVirtualFair\WebVirtualFair\bin\Debug\netcoreapp2.2\WebVirtualFair.runtimeconfig.dev.json
+C:\Users\Lau Lau\RiderProjects\WebVirtualFair\WebVirtualFair\bin\Debug\netcoreapp2.2\WebVirtualFair.dll
+C:\Users\Lau Lau\RiderProjects\WebVirtualFair\WebVirtualFair\bin\Debug\netcoreapp2.2\WebVirtualFair.pdb
+C:\Users\Lau Lau\RiderProjects\WebVirtualFair\WebVirtualFair\bin\Debug\netcoreapp2.2\WebVirtualFair.Views.dll
+C:\Users\Lau Lau\RiderProjects\WebVirtualFair\WebVirtualFair\bin\Debug\netcoreapp2.2\WebVirtualFair.Views.pdb
+C:\Users\Lau Lau\RiderProjects\WebVirtualFair\WebVirtualFair\obj\Debug\netcoreapp2.2\WebVirtualFair.csprojAssemblyReference.cache
+C:\Users\Lau Lau\RiderProjects\WebVirtualFair\WebVirtualFair\obj\Debug\netcoreapp2.2\WebVirtualFair.csproj.CoreCompileInputs.cache
+C:\Users\Lau Lau\RiderProjects\WebVirtualFair\WebVirtualFair\obj\Debug\netcoreapp2.2\WebVirtualFair.RazorAssemblyInfo.cache
+C:\Users\Lau Lau\RiderProjects\WebVirtualFair\WebVirtualFair\obj\Debug\netcoreapp2.2\WebVirtualFair.RazorAssemblyInfo.cs
+C:\Users\Lau Lau\RiderProjects\WebVirtualFair\WebVirtualFair\obj\Debug\netcoreapp2.2\WebVirtualFair.AssemblyInfoInputs.cache
+C:\Users\Lau Lau\RiderProjects\WebVirtualFair\WebVirtualFair\obj\Debug\netcoreapp2.2\WebVirtualFair.AssemblyInfo.cs
+C:\Users\Lau Lau\RiderProjects\WebVirtualFair\WebVirtualFair\obj\Debug\netcoreapp2.2\WebVirtualFair.TagHelpers.input.cache
+C:\Users\Lau Lau\RiderProjects\WebVirtualFair\WebVirtualFair\obj\Debug\netcoreapp2.2\WebVirtualFair.TagHelpers.output.cache
+C:\Users\Lau Lau\RiderProjects\WebVirtualFair\WebVirtualFair\obj\Debug\netcoreapp2.2\WebVirtualFair.RazorCoreGenerate.cache
+C:\Users\Lau Lau\RiderProjects\WebVirtualFair\WebVirtualFair\obj\Debug\netcoreapp2.2\Razor\Views\Home\Create.g.cshtml.cs
+C:\Users\Lau Lau\RiderProjects\WebVirtualFair\WebVirtualFair\obj\Debug\netcoreapp2.2\Razor\Views\Home\Details.g.cshtml.cs
+C:\Users\Lau Lau\RiderProjects\WebVirtualFair\WebVirtualFair\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
+C:\Users\Lau Lau\RiderProjects\WebVirtualFair\WebVirtualFair\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.g.cshtml.cs
+C:\Users\Lau Lau\RiderProjects\WebVirtualFair\WebVirtualFair\obj\Debug\netcoreapp2.2\Razor\Views\Home\PurchaseOrderList.g.cshtml.cs
+C:\Users\Lau Lau\RiderProjects\WebVirtualFair\WebVirtualFair\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.g.cshtml.cs
+C:\Users\Lau Lau\RiderProjects\WebVirtualFair\WebVirtualFair\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+C:\Users\Lau Lau\RiderProjects\WebVirtualFair\WebVirtualFair\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\Users\Lau Lau\RiderProjects\WebVirtualFair\WebVirtualFair\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+C:\Users\Lau Lau\RiderProjects\WebVirtualFair\WebVirtualFair\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.g.cshtml.cs
+C:\Users\Lau Lau\RiderProjects\WebVirtualFair\WebVirtualFair\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.g.cshtml.cs
+C:\Users\Lau Lau\RiderProjects\WebVirtualFair\WebVirtualFair\obj\Debug\netcoreapp2.2\WebVirtualFair.RazorTargetAssemblyInfo.cache
+C:\Users\Lau Lau\RiderProjects\WebVirtualFair\WebVirtualFair\obj\Debug\netcoreapp2.2\WebVirtualFair.RazorTargetAssemblyInfo.cs
+C:\Users\Lau Lau\RiderProjects\WebVirtualFair\WebVirtualFair\obj\Debug\netcoreapp2.2\WebVirtualFair.Views.pdb
+C:\Users\Lau Lau\RiderProjects\WebVirtualFair\WebVirtualFair\obj\Debug\netcoreapp2.2\WebVirtualFair.dll
+C:\Users\Lau Lau\RiderProjects\WebVirtualFair\WebVirtualFair\obj\Debug\netcoreapp2.2\WebVirtualFair.pdb
+C:\Users\Lau Lau\RiderProjects\WebVirtualFair\WebVirtualFair\obj\Debug\netcoreapp2.2\WebVirtualFair.csproj.CopyComplete
+C:\Users\Lau Lau\RiderProjects\WebVirtualFair\WebVirtualFair\obj\Debug\netcoreapp2.2\Razor\Views\Home\listaProsucto.g.cshtml.cs
+C:\Users\Lau Lau\RiderProjects\WebVirtualFair\WebVirtualFair\obj\Debug\netcoreapp2.2\Razor\Views\Home\createProduct.g.cshtml.cs
+C:\Users\Lau Lau\RiderProjects\WebVirtualFair\WebVirtualFair\obj\Debug\netcoreapp2.2\Razor\Views\Home\EditProduct.g.cshtml.cs

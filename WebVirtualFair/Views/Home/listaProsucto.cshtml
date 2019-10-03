@@ -1,0 +1,73 @@
+﻿@model IEnumerable<WebVirtualFair.Models.ProductData> 
+
+@{
+    ViewBag.Title = "productos";
+    Layout = "_Layout";
+}
+<p>
+    <a asp-action="CreateProduct"> Create New</a>
+</p>
+
+<h2>Productos</h2>
+<table class="table">
+    <thead>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.id)
+        </th>
+        
+        <th>
+            @Html.DisplayNameFor(expression: model => model.name)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(expression: model => model.description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(expression: model => model.image)
+        </th>
+        <th>
+            @Html.DisplayNameFor(expression: model => model.created_at)
+        </th>
+        <th>
+            @Html.DisplayNameFor(expression: model => model.updated_at)
+        </th>
+    </tr>
+   
+    </thead>
+
+    <tbody>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem=>item.id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem=>item.name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem=>item.description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem=>item.image)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem=>item.created_at)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem=>item.updated_at)
+            </td>
+            
+          
+           <td>
+                           @Html.ActionLink("Edit", "EditProduct", new {id = item.id}) /
+                           @Html.ActionLink("Delete", "DeleteProduct", new {id = item.id}) 
+           </td> 
+            
+            
+        </tr>
+    }
+    </tbody>
+
+</table>

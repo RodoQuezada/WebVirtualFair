@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="$USER_HOME$/Library/Caches/Rider2019.2/extResources" t="IncludeRecursive" />
-    <e p="$USER_HOME$/Library/Caches/Rider2019.2/resharper-host/local/Transient/ReSharperHost/v192/SolutionCaches/_WebVirtualFair.-1704107252.00" t="ExcludeRecursive" />
-    <e p="$APPLICATION_CONFIG_DIR$/scratches" t="IncludeRecursive" />
-    <e p="$PROJECT_DIR$" t="IncludeFlat">
+    <e p="C:\Users\Lau Lau\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Lau Lau\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_WebVirtualFair.-1203192327.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Lau Lau\RiderProjects\WebVirtualFair" t="IncludeFlat">
       <e p="packages" t="ExcludeRecursive" />
       <e p="WebVirtualFair" t="IncludeRecursive">
         <e p="appsettings.Development.json" t="Include" />
@@ -19,6 +18,7 @@
         <e p="Models" t="Include">
           <e p="ErrorViewModel.cs" t="Include" />
           <e p="PersonData.cs" t="Include" />
+          <e p="ProductData.cs" t="Include" />
           <e p="PurchaseOrderData.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
@@ -39,8 +39,11 @@
           <e p="_ViewStart.cshtml" t="Include" />
           <e p="Home" t="Include">
             <e p="create.cshtml" t="Include" />
+            <e p="createProduct.cshtml" t="Include" />
             <e p="Details.cshtml" t="Include" />
+            <e p="EditProduct.cshtml" t="Include" />
             <e p="Index.cshtml" t="Include" />
+            <e p="listaProsucto.cshtml" t="Include" />
             <e p="Privacy.cshtml" t="Include" />
             <e p="PurchaseOrderList.cshtml" t="Include" />
           </e>
