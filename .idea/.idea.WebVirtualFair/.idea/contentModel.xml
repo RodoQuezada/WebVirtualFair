@@ -11,7 +11,10 @@
         <e p="appsettings.json" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="Controllers" t="Include">
+          <e p="AddressController.cs" t="Include" />
           <e p="HomeController.cs" t="Include" />
+          <e p="PersonController.cs" t="Include" />
+          <e p="PurchaseOrder.cs" t="Include" />
         </e>
         <e p="Helper" t="Include">
           <e p="Helper.cs" t="Include" />
@@ -38,16 +41,24 @@
         <e p="Views" t="Include">
           <e p="_ViewImports.cshtml" t="Include" />
           <e p="_ViewStart.cshtml" t="Include" />
-          <e p="Home" t="Include">
+          <e p="Address" t="Include">
             <e p="create.cshtml" t="Include" />
-            <e p="createAddress.cshtml" t="Include" />
-            <e p="Details.cshtml" t="Include" />
-            <e p="EditPerson.cshtml" t="Include" />
+            <e p="List.cshtml" t="Include" />
+            <e p="Update.cshtml" t="Include" />
+          </e>
+          <e p="Home" t="Include">
             <e p="Index.cshtml" t="Include" />
-            <e p="ListAddress.cshtml" t="Include" />
             <e p="Privacy.cshtml" t="Include" />
+          </e>
+          <e p="Person" t="Include">
+            <e p="create.cshtml" t="Include" />
+            <e p="Details.cshtml" t="Include" />
+            <e p="List.cshtml" t="Include" />
+            <e p="List.cshtml.cs" t="Include" />
+            <e p="Update.cshtml" t="Include" />
+          </e>
+          <e p="PurchaseOrder" t="Include">
             <e p="PurchaseOrderList.cshtml" t="Include" />
-            <e p="updateAddress.cshtml" t="Include" />
           </e>
           <e p="Shared" t="Include">
             <e p="_CookieConsentPartial.cshtml" t="Include" />

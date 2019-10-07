@@ -12,6 +12,8 @@
     <hr/>
     <dl class="row">
 
+         <div class="col-sm"> 
+        
         <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.id)
         </dt>
@@ -51,11 +53,13 @@
         <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.idNumber)
         </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.idNumber)
-        </dd>
+         <dd class="col-sm-10">
+             @Html.DisplayFor(model => model.idNumber)
+         </dd>
+         
+      
 
-        <dt class="col-sm-2">
+         <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.idNumberType)
         </dt>
         <dd class="col-sm-10">
@@ -72,11 +76,14 @@
         <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.email)
         </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.email)
-        </dd>
-
-        <dt class="col-sm-2">
+             <dd class="col-sm-10">
+                 @Html.DisplayFor(model => model.email)
+             </dd>
+             
+                </div>
+                        <div class="col-sm"> 
+             
+             <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.password)
         </dt>
         <dd class="col-sm-10">
@@ -152,8 +159,10 @@
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.companyEmail)
         </dd>
+        
+         </div>
     </dl>
 </div>
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="List">Back to List</a>
 </div>
